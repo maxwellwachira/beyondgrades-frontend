@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import MainLayout from '../layouts/MainLayout/MainLayout';
-
+import { Register } from '../features/authentication';
 
 const SignUp: NextPage = () => {
   return (
@@ -12,7 +12,7 @@ const SignUp: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainLayout>
-        Sign Up
+        <Register />
       </MainLayout>
     </>
   );
