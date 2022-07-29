@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import MainLayout from '../layouts/MainLayout/MainLayout';
+import { Login } from '../features/authentication';
 
 
 const SignIn: NextPage = () => {
@@ -12,7 +13,7 @@ const SignIn: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainLayout>
-        Sign In
+        <Login />
       </MainLayout>
     </>
   );
