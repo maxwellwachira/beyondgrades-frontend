@@ -4,7 +4,6 @@ import {
   Anchor,
   AppShell,
   Burger,
-  Button,
   Header,
   MediaQuery,
   Navbar,
@@ -34,10 +33,11 @@ const MainLayout = ({ children }: Props) => {
   return (
     <>
       <AppShell
+        className={classes.bodyBackground}
         fixed
         navbarOffsetBreakpoint="sm"
         header={
-          <Header height={60}>
+          <Header height={60} className={classes.headerBackground}>
             <MediaQuery largerThan="sm" styles={{ display: "none" }}>
               <div  className={classes.burger}>
                 <Anchor href="/">
@@ -108,7 +108,8 @@ const MainLayout = ({ children }: Props) => {
           </Navbar>
         }
       >
-        {children}
+          {children}
+  
       </AppShell>
     </>
   );

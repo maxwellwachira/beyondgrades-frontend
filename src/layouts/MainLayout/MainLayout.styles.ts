@@ -5,6 +5,11 @@ export const useStyles = createStyles((theme) => ({
         color: theme.colorScheme === 'dark' ?  theme.colors.gray[0] : theme.colors.dark[9]
     },
 
+    bodyBackground: {
+        background: theme.colorScheme === 'light' ?  theme.colors.gray[0] : theme.colors.dark[7],
+        margin: "0"
+    },
+
     burger: {
         display: "flex",
         justifyContent: "space-between",
@@ -17,6 +22,10 @@ export const useStyles = createStyles((theme) => ({
         justifyContent: "space-between",
         alignItems: "center",
         height: "60px"
+    },
+
+    headerBackground: {
+        background: theme.colorScheme === 'light' ?  "white" : theme.colors.dark[7],
     },
 
     links: {
@@ -62,5 +71,6 @@ export const useStyles = createStyles((theme) => ({
         backgroundColor: "transparent",
         border: "2px solid #0B7285",
         padding: "1px 10px"
-    }
+    },
+
 }))
